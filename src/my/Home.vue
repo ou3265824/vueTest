@@ -1,5 +1,6 @@
 <template>
   <div>
+    <my-title title='首页'></my-title>
     <button v-on:click="sa">获取数据</button>
     {{d}}
 
@@ -7,7 +8,10 @@
 </template>
 
 <script>
+  import MyTitle from "../components/MyTitle";
+
   export default {
+    components: {MyTitle},
     name: 'home',
     data(){
       return{

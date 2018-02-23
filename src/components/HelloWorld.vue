@@ -2,7 +2,7 @@
   <div class="hello">
     <h1><router-link to="/login" >{{ msg }}</router-link></h1>
     <h1><router-link to="/home" >{{ sa }}</router-link></h1>
-    <h2>Essential Links</h2>
+    <h2><router-link to="/test" >Essential Links</router-link></h2>
 
     <ul>
       <li>
@@ -86,7 +86,19 @@
 </template>
 
 <script>
+// import Vue from 'vue';
+// var t={
+//   template: '<div>子标题</div>',
+// }
+//
+// Vue.component("t",t);
+
+import MyTitle from "./MyTitle";
+
 export default {
+  components: {
+    MyTitle,
+    },
   name: 'HelloWorld',
   data () {
     return {

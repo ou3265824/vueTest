@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Register from '@/my/Register'
 import Login from '@/my/Login'
 import Home from '@/my/Home'
+import Test from '@/my/Test'
 import VueResource from 'vue-resource'
 
 Vue.use(VueResource);
@@ -30,6 +31,9 @@ export default new Router({
       path: '/home',
       // name:'Home',
       component: Home
+    },{
+     path:'/test',
+      component:Test,
     }
   ]
 })

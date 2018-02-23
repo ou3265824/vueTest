@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>登录</div>
+    <my-title title='登录'></my-title>
     <div>
       <span>用户名：</span>
       <input />
@@ -40,7 +40,10 @@
 </template>
 
 <script>
+import MyTitle from "../components/MyTitle";
+
 export default {
+  components: {MyTitle},
   name: 'login',
   data () {
     return {

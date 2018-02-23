@@ -1,7 +1,7 @@
 <template>
   <div>
+    <my-title title='注册'></my-title>
     <router-link to="/login" replace>返回</router-link>
-    <span>        注册</span>
 
     <div>
       <span>用户名</span>
