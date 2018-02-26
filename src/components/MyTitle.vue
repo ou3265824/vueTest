@@ -1,7 +1,10 @@
 <template>
     <div id="my">
-          <img  src="../assets/back.png" />
+        <div id="left">
+          <img  src="../assets/user/back.png" />
+        </div>
         <span id="msg" >{{ title }}</span>
+        <span id="right" ></span>
       <!--<span @click="myUpdate">{{ message }}</span>-->
     </div>
 </template>
@@ -34,16 +37,23 @@
     display: flex;
     text-align: center;
     color: white;
-    /*align-items: center;*/
+    align-items: center;
     background: crimson;
+  }
+  #left{
+    width: 2%;
+    padding: 20px;
+  }
+  #right{
+    width: 2%;
     padding: 20px;
   }
   #msg{
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-size: 26px;
-    line-height: 50px;
+    width: 98%;
+    /*align-items: center;*/
+    /*text-align: center;*/
+    /*justify-content: center;*/
+    font-size: 36px;
+    /*line-height: 80px;*/
   }
 </style>
